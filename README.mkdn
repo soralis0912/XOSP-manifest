@@ -7,11 +7,11 @@ with [Git and Repo](http://source.android.com/source/version-control.html).
 
 To initialize your local repository using the XOSP trees, use a command like this:
 
-    repo init -u https://github.com/LineageOS/android_external_chromium-webview.git -b xosp-n-rebase
+    repo init -u https://github.com/soralis0912/XOSP-manifest.git -b xosp-n-rebase
     
 Then to sync up:
 
-    repo sync -c -f -j<number_of_threads> --force-sync --no-clone-bundle --no-tags
+    repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --all)
 
 --------
 
