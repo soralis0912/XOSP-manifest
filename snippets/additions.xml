@@ -5,6 +5,10 @@
            fetch="https://github.com/LineageOS"
            revision="cm-14.1" />
 
+  <remote  name="LOS_LAST"
+           fetch="https://github.com/LineageOS"
+           revision="master" />
+
   <!-- Additions -->
   <project path="external/bash" name="android_external_bash"  revision="xosp-n-rebase" />
   <project path="external/exfat" name="android_external_exfat"  revision="xosp-n-rebase" />
@@ -74,7 +78,7 @@
 
   <!-- LineageOS additions -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="LOS" />
-  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="pdk" clone-depth="1" remote="LOS" />
+  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="pdk" clone-depth="1" remote="LOS_LAST" />
   <project path="external/ebtables" name="android_external_ebtables" remote="LOS" />
   <project path="external/libnfnetlink" name="android_external_libnfnetlink"  remote="LOS" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw"  remote="LOS" />
